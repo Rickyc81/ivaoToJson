@@ -70,7 +70,7 @@ app.get('/status', (req, res) => {
 app.get('/clients', function(req, res) {
   let dataToSend = [];
 
-  fetch(URL_TEST)
+  fetch(URL)
     .then(response => {
       //console.log(response.body._outBuffer.length)
       if (response.body._outBuffer && response.ok) {
