@@ -23,12 +23,6 @@ const URL = "https://api.ivao.aero/getdata/whazzup/whazzup.txt";
 const URL_STATUS = "http://www.ivao.aero/whazzup/status.txt";
 const URL_METAR = "http://wx.ivao.aero/metar.php";
 
-// TEST SERVER ON VPS
-const URL_UNKNOW = "http://www.google.it";
-const URL_TEST = "http://159.69.178.177/whazzup.txt";
-const URL_TEST_EMPTY = "http://159.69.178.177/whazzup_empty.txt";
-const URL_TEST_MALFORMED = "http://159.69.178.177/whazzup_malformed.txt";
-
 app.use(helmet());
 app.use(cors());
 
