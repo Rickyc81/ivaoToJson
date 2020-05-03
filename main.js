@@ -199,7 +199,7 @@ app.all('*', (req, res) => {
 })
 
 // Unknow routes
-app.all('/taf', (req, res) => {
+app.get('/taf', (req, res) => {
   res.status(200).send({
     status: 'success',
     code: 200,
@@ -211,7 +211,7 @@ app.all('/taf', (req, res) => {
 })
 
 // Unknow Shorttaf
-app.all('/shorttaf', (req, res) => {
+app.get('/shorttaf', (req, res) => {
   res.status(200).send({
     status: 'success',
     code: 200,
@@ -223,7 +223,7 @@ app.all('/shorttaf', (req, res) => {
 })
 
 // Metar
-app.all('/metar', (req, res) => {
+app.get('/metar', (req, res) => {
   res.status(200).send({
     status: 'success',
     code: 200,
