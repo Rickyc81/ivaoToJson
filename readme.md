@@ -13,15 +13,8 @@
 ### Install & Use it
 
     client:~$ git clone https://github.com/Rickyc81/ivaoToJson.git
-     Cloning into 'ivaoToJson'...
-     remote: Enumerating objects: 2189, done.
-     remote: Counting objects: 100% (2189/2189), done.
-     remote: Compressing objects: 100% (1731/1731), done.
-     remote: Total 2189 (delta 426), reused 2122 (delta 360), pack-reused 0
-     Receiving objects: 100% (2189/2189), 2.50 MiB | 5.23 MiB/s, done.
-     Resolving deltas: 100% (426/426), done.
     client:~$ cd ivaoToJson
-    client:~$ npm install
+    client:~$ npm i
     client:~$ npm start
 
 ### Routes:
