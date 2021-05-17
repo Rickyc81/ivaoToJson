@@ -3,18 +3,22 @@
   "version": "1.0.0",
   "description": "API REST for IVAO whazzup file",
   "scripts": {
-    "start": "nodemon main.js",
+    "start": "node main.js",
+    "dev": "nodemon main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Riccardo Cosenza",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
     "helmet": "^3.22.0",
     "node-fetch": "^2.6.1",
-    "nodemon": "^2.0.3",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

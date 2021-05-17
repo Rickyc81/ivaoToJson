@@ -10,6 +10,8 @@
 
  */
 
+require('dotenv').config();
+
 const express = require('express');
 const fetch = require('node-fetch');
 const helmet = require('helmet');
@@ -17,7 +19,7 @@ const cors = require('cors');
 
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 const URL = "https://api.ivao.aero/getdata/whazzup/whazzup.txt";
 const URL_STATUS = "http://www.ivao.aero/whazzup/status.txt";
@@ -72,7 +74,6 @@ app.get('/clients', function(req, res) {
 
   fetch(URL)
     .then(response => {
-      //console.log(response.body._outBuffer.length)
       if (response.body._outBuffer && response.ok) {
         return response.text();
       } else {
@@ -234,4 +235,4 @@ app.get('/metar', (req, res) => {
   })
 })
 
-app.listen(PORT, () => console.log(`Server listening in ${PORT}`));
+app.listen(process.env.PORT || 3000, () => console.log(`Server listening in ${PORT}`));
