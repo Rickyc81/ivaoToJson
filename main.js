@@ -72,7 +72,6 @@ app.get('/clients', function(req, res) {
 
   fetch(URL)
     .then(response => {
-      //console.log(response.body._outBuffer.length)
       if (response.body._outBuffer && response.ok) {
         return response.text();
       } else {
